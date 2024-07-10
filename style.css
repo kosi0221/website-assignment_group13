@@ -1,0 +1,498 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+.background-div p {
+  font-family: "Noto Serif JP", "Playfair Display";
+  height: 690px;/* 高さ */
+  font-weight: bold;
+  color:#F5F3F0;
+  font-weight: 500;
+  margin-left: 50px;
+}
+
+.background-div {
+  background-image: url('img/Muguet.png');
+  width: 1280px;
+  height: 695px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-weight: bold;
+  margin-left: 70px;
+}
+
+.fade-in-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s ease-out, transform 1s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.navigation {
+  z-index: 9999;
+  background-color: #F5F3F0;
+  position: fixed;
+  width: 100vw;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px; 
+  height: 80px;
+  letter-spacing: 2px;
+}
+
+/* ナビゲーションの箱 */
+nav {
+  background-color: #F5F3F0;
+}
+
+.navigation a {
+  text-decoration: none;
+  line-height: 80px;
+  color: #333333;
+}
+
+.navigation a:hover {
+  opacity: 0.6;
+}
+
+nav a:hover {
+  opacity: 0.6;
+}
+/* リスト全体 */
+nav ul {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;  
+  gap: 40px;
+}
+
+/* １つ１つのリスト */
+nav li {
+  font-weight: bold;
+  list-style: none;
+}
+
+/* リンク */
+nav a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body {
+  font-family: Noto Serif JP, Playfair Display;
+  letter-spacing: 10%;
+  line-height: 180%;
+  background-color: #F5F3F0;
+  color:#333333;
+}
+
+/* h2見出し */
+.title {
+  font-size: 40px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.About {
+  margin-top: 110px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.About h3 {
+  font-weight: normal;
+  margin-bottom: 100px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.About p1 {
+  margin-top: 30px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.About p2 {
+  margin-top: 30px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ellipse {
+  margin-top: 100px;
+  width: 150px;
+  height: 50px;
+  background-color: #FFFDFA;
+  border-radius: 50% / 50%;
+  border: 1px solid #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+
+.a1 {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #333333;
+  text-decoration: none;
+}
+
+.ellipse a:hover {
+  opacity: 0.6;
+}
+
+.Workshop {
+  margin-left: 60px;
+}
+.Workshop h2{
+  font-size: 40px;
+  background-color: #F5F3F0;
+  text-align: left;
+  font-weight: bold;
+  color:#333333;
+  letter-spacing: 4px;
+  margin-top: 200px;
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+
+.firstphoto {
+  margin-left: 400px;
+  float: left;
+  margin-right: -30px;
+}
+
+.photo {
+  margin-right: 0px;
+  float: left;
+}
+
+.Workshop p{
+  margin-top: 50px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding-left: 250px;;
+  float: left;
+  margin-right: 0px;
+}
+
+.About container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Workshop container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Workshop ellipse {
+  margin-top: 100px;
+  width: 150px;
+  height: 50px;
+  background-color: #FFFDFA;
+  border-radius: 50% / 50%;
+  border: 1px solid #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container1 {
+  margin-right: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+}
+
+.container2 {
+  margin-right: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+}
+
+.Product {
+  margin-left: 60px;
+}
+
+.Product h2 {
+  font-size: 40px;
+  background-color: #F5F3F0;
+  text-align: left;
+  font-weight: bold;
+  color:#333333;
+  letter-spacing: 4px;
+  margin-top: 200px;
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+
+.firstphoto {
+  margin-left: 220px;
+  float: left;
+  margin-right: 30px;
+}
+
+.photo {
+  margin-right: 30px;
+  float: left;
+}
+
+.Product p {
+  margin-top: 50px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding-left: 250px;;
+  float: left;
+}
+
+.Access h2 {
+  font-size: 40px;
+  background-color: #F5F3F0;
+  text-align: center;
+  font-weight: bold;
+  color:#333333;
+  letter-spacing: 4px;
+  margin-top: 200px;
+}
+
+.map {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center; /* 水平方向に中央揃え */
+  align-items: center; /* 垂直方向に中央揃え */
+}
+
+iframe {
+  border-width: 5px 10px 15px 20px;
+}
+
+.rectangle a:hover {
+  opacity: 0.6;
+}
+
+.Accessp1 {
+  margin-top: 50px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-align: left;
+  margin-left: 600px;
+  float: left;
+  
+}
+
+.Accessp2 {
+  margin-top: 50px;
+  margin-left: 300px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-align: left;
+  position: relative;
+  left: 60px;
+}
+
+.Contact h2 {
+  font-size: 40px;
+  background-color: #F5F3F0;
+  text-align: center;
+  font-weight: bold;
+  color:#333333;
+  letter-spacing: 4px;
+  margin-top: 200px;
+}
+
+.Contact p {
+  margin-top: 50px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.Contact h3 {
+  font-size: 32px;
+  background-color: #F5F3F0;
+  text-align: center;
+  font-weight: bold;
+  color:#333333;
+  letter-spacing: 2px;
+  line-height: 180%;
+}
+
+.containerr {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center; /* 水平方向に中央揃え */
+  align-items: center; /* 垂直方向に中央揃え */
+}
+
+/* 四角形のスタイル */
+.rectangle {
+  width: 362px; /* 四角形の幅 */
+  height: 145px; /* 四角形の高さ */
+  background-color: #FFFDFA; /* 四角形の背景色 */
+  border: 2px solid #333333; /* 四角形の枠線 */
+  display: flex; /* フレックスボックスを使用 */
+  justify-content: center; /* フレックスアイテムを水平方向に中央揃え */
+  align-items: center; /* フレックスアイテムを垂直方向に中央揃え */
+  border-radius: 15px; 
+}
+
+/* テキストのスタイル */
+.a2 {
+  color: #333333; /* テキストの色 */
+  font-size: 32px; /* テキストのフォントサイズ */
+  font-weight: 500; /* テキストの太さ */
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 5px;
+  line-height: 180%;
+}
+
+.line {
+  border-top: 2px solid #E6E6E6; /* 上辺に2ピクセルの黒い線を設定 */
+  width: 100%; /* 線の幅を100%に設定 */
+  margin: 20px 0; /* 線の前後の余白 */
+  margin-top:200px;
+}
+
+.Footer h3 {
+  margin-top: 30px;
+}
+
+.Footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-decoration: none;
+  color: inherit;
+  margin-top: 100px;
+  letter-spacing: 2px;
+  list-style-type: none;
+}
+/* フッター */
+.Links {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  left: 400px;
+  top: -50px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.Links li {
+  margin: 5px 0;
+  color: #333333;
+  text-decoration: none;
+}
+
+.Links a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.Links a:hover {
+  opacity: 0.6;
+}
+
+.Information {
+  position: relative;
+  left: 60px;
+  top: -50px;
+  opacity: 0.6;
+}
+
+.Information a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.Information a:hover {
+  opacity: 0.6;
+}
+
+.Footer > div {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.Footer h3, .Footer h4 {
+  margin-bottom: 10px;
+}
+
+.Footer p {
+  margin: 5px 0;
+}
+
+.Insta_btn {
+  display: inline-block; 
+  background-color: #F5F3F0;
+  color: #333333;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.footerp {
+  margin-left: 100px;
+  margin-top: -60px;
+  letter-spacing: 2px;;
+  position: relative;
+
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #F5F3F0;
+    padding: 20px 0;
+    gap: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
